@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    max-width: 1000px;
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2em;
+    color: #333;
+}
+
+.input-container,
+.stats-container,
+.actions-container,
+.output-container {
+    margin-bottom: 20px;
+}
+
+textarea,
+input[type="text"],
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.primary-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.primary-btn:hover {
+    background-color: #0056b3;
+}
+
+.output {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    position: relative;
+    background-color: #fff;
+}
+
+.output p {
+    margin-bottom: 10px;
+}
+
+.output .copy-btn,
+.output .done-btn,
+.output .undone-btn {
+    position: absolute;
+    top: 10px;
+}
+
+.output .copy-btn {
+    right: 160px;
+}
+
+.output .done-btn,
+.output .undone-btn {
+    right: 10px;
+}
+
+.output .undone-btn {
+    display: none;
+}
+
+.done .undone-btn {
+    display: inline;
+}
+
+.done .done-btn {
+    display: none;
+}
+
+.done {
+    background-color: #e0ffe0;
+}
+
+.actions-container textarea {
+    height: 100px;
+}
+
